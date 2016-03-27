@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-browser-babel",
+  "name": "your-module-name",
   "main": "lib",
   "files": [
     "lib",

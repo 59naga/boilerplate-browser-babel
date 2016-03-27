@@ -1,4 +1,4 @@
-Your Module Name(Upper Camel)
+Your Module Name(Pascal Camel)
 ---
 
 <p align="right">
@@ -47,14 +47,14 @@ Releasing
 ```bash
 npm run release
 # ...
-#     boilerplate-browser-babel.min.js  648 bytes       0  [emitted]  main
-# boilerplate-browser-babel.min.js.map    5.02 kB       0  [emitted]  main
+#     your-module-name.min.js  648 bytes       0  [emitted]  main
+# your-module-name.min.js.map    5.02 kB       0  [emitted]  main
 ```
 
 ```html
-<script src="release/boilerplate-browser-babel.min.js"></script>
+<script src="release/your-module-name.min.js"></script>
 <script>
-  console.log(BoilerplateBrowserBabel()); // foo
+  console.log(YourModuleName()); // foo
 </script>
 ```
 
