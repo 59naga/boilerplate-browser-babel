@@ -8,6 +8,8 @@
   "scripts": {
     "start": "karma start",
     "test": "karma start --single-run",
+    "cover": "abby test, report --no-watch",
+    "report": "node -e \"if(process.env.TRAVIS){}else{process.exit(1)}\" && codeclimate-test-reporter < coverage/lcov.info || echo skip coverage report",
     "lint": "eslint src test",
     "release": "webpack",
     "dev": "abby dev:* --no-watch",
