@@ -1,4 +1,4 @@
-Your Module Name(Pascal Camel)
+Your Module Name(Pascal Case)
 ---
 
 <p align="right">
