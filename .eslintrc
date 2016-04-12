@@ -14,3 +14,7 @@ rules:
 
   max-len: 1
   arrow-body-style: 1
+
+  complexity:
+    - 1
+    - max: 10

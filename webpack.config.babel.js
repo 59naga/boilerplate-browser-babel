@@ -33,9 +33,8 @@ const config = {
   },
 };
 
-switch (process.env.npm_lifecycle_event) {
-  case 'release':
-    process.env.NODE_ENV = 'production';
+switch (process.env.NODE_ENV) {
+  case 'production':
     config.plugins = [
       new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } }),
     ];
