@@ -1,8 +1,12 @@
-import yourModuleName from '../src';
-import assert from 'power-assert';
+// dependencies
+import assert from 'assert';
 
-describe('your-module-name', () => {
+// target
+import yourModuleName from '../src';
+
+// specs
+describe('yourModuleName', () => {
   it('spec1', () => {
-    assert(yourModuleName() === 'bar');
+    assert.deepStrictEqual(yourModuleName(), { foo: null });
   });
 });

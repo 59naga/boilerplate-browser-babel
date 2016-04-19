@@ -45,7 +45,7 @@ Releasing
 ---
 
 ```bash
-npm run release
+npm run build
 # ...
 #     your-module-name.min.js  648 bytes       0  [emitted]  main
 # your-module-name.min.js.map    5.02 kB       0  [emitted]  main

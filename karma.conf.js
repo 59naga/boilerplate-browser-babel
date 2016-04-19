@@ -3,6 +3,7 @@ const path = require('path');
 const init = {
   plugins: [
     'karma-chrome-launcher',
+    // 'karma-phantomjs-launcher', // optional install
     'karma-mocha',
 
     'karma-webpack',
@@ -59,6 +60,12 @@ const init = {
 
 module.exports = (config) => {
   config.set(init);
+
+  // if (process.env.TRAVIS) {
+  //   config.set({
+  //     browsers: ['PhantomJS'],
+  //   });
+  // }
 
   if (config.singleRun) {
     config.reporters.push('coverage');
