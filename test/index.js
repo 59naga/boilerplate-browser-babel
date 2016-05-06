@@ -7,6 +7,7 @@ import yourModuleName from '../src';
 // specs
 describe('yourModuleName', () => {
   it('spec1', () => {
+    assert.notDeepStrictEqual(yourModuleName(), { foo: null });
     assert.deepStrictEqual(yourModuleName(), { foo: null });
   });
 });
