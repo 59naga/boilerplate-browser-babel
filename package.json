@@ -13,7 +13,7 @@
     "cover:report": "npm-if TRAVIS \"codeclimate-test-reporter < coverage/lcov.info\"",
     "lint": "eslint src test",
     "build": "abby webpack --env",
-    "dev": "abby dev:*",
+    "dev": "abby dev:* --parse parallel",
     "dev:open": "wait-on http://localhost:8080 && opener http://localhost:8080/",
     "dev:server": "webpack-dev-server --hot --inline",
     "postversion": "git push --follow-tags && conventional-github-releaser -p angular -r 0"
