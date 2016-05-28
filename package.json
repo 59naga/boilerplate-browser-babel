@@ -8,8 +8,9 @@
   "scripts": {
     "start": "karma start",
     "test": "karma start --single-run",
-    "cover": "abby test, report",
-    "report": "node -e \"if(process.env.TRAVIS){}else{process.exit(1)}\" && codeclimate-test-reporter < coverage/lcov.info || echo skip coverage report",
+    "cover": "abby cover:*",
+    "cover:test": "npm test",
+    "cover:report": "npm-if TRAVIS \"codeclimate-test-reporter < coverage/lcov.info\"",
     "lint": "eslint src test",
     "build": "abby webpack --env",
     "dev": "abby dev:*",
@@ -18,15 +19,8 @@
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "postversion": "git push --follow-tags && conventional-github-releaser -p angular -r 0"
   },
-  "abigail": {
-    "plugins": {
-      "watch": false,
-      "parse": "raw",
-      "launch": "force"
-    }
-  },
   "devDependencies": {
-    "abigail": "^1.6.1",
+    "abigail": "^1.7.1",
     "babel-cli": "^6.6.5",
     "babel-eslint": "^6.0.2",
     "babel-loader": "^6.2.4",
@@ -50,6 +44,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
+    "npm-statement": "^0.0.0",
     "opener": "^1.4.1",
     "pascal-case": "^1.1.2",
     "power-assert": "^1.3.1",
