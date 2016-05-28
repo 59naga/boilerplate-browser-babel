@@ -16,7 +16,6 @@
     "dev": "abby dev:*",
     "dev:open": "wait-on http://localhost:8080 && opener http://localhost:8080/",
     "dev:server": "webpack-dev-server --hot --inline",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "postversion": "git push --follow-tags && conventional-github-releaser -p angular -r 0"
   },
   "devDependencies": {
@@ -29,7 +28,6 @@
     "babel-preset-power-assert": "^1.0.0",
     "babel-preset-stage-1": "^6.5.0",
     "codeclimate-test-reporter": "^0.3.1",
-    "conventional-changelog-cli": "^1.1.1",
     "conventional-github-releaser": "^1.1.1",
     "eslint": "^2.7.0",
     "eslint-config-airbnb": "^9.0.1",
