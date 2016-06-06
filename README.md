@@ -31,7 +31,7 @@ Development
 ---
 Requirement global
 * NodeJS v5.11.1
-* Npm v3.8.6 (or [pnpm](https://github.com/rstacruz/pnpm))
+* Npm v3.9.3 (or [pnpm](https://github.com/rstacruz/pnpm))
 
 ```bash
 git clone https://github.com/59naga/your-module-name
